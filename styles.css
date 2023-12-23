@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-color: #F8C8DC;
 }
 
@@ -19,7 +19,17 @@ body {
 
 .header_text {
     font-family: 'Nunito';
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.text {
+    font-family: 'Nunito';
+    font-size: 25px;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -48,6 +58,10 @@ body {
     border: none;
     border-radius: 12px;
     transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
 }
 
 .gif_container {
