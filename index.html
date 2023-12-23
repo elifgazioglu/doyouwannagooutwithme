@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>doyouwannagooutwithme</title>
         <link rel="stylesheet" href="./styles.css">
-        
+        <script src="./script.js"></script>
     </head> 
+
     <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Do you wanna go out with me?</h1>
+        <div id="page1" class="container">
+            <div>
+                <h1 class="header_text">Do you wanna go out with me?</h1>
             </div>
             <div class="gif_container">
                 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
             </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="showYesPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
             </div>
         </div>
-       
-    </body> 
+
+        <div id="page2" class="container" style="display:none;">
+            <div>
+                <h1 class="header_text">Yeeeyyyy!!</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+            </div>
+        </div>
+        
+    </body>
 </html>
