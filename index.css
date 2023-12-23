@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  font-family: "Nunito", system-ui, sans-serif;
+  background-color: #f8c8dc;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+
+  scroll-margin: 5rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.answer {
+  gap: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer > * {
+  background-color: #ab1654;
+  color: white;
+  font-weight: 600;
+  padding: 15px 35px;
+
+  border: none;
+  outline: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.answer > *:hover {
+  opacity: 0.9;
+}
+
+.answer > *:not(#cant):focus-within {
+  outline: 3px solid #ab1654;
+  outline-offset: 2px;
+}

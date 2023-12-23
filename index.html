@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Do you wanna go out with me?</h1>
-            </div>
-            <div class="gif_container">
-                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
-            </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
-            </div>
-        </div>
-       
-    </body> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Do you wanna go out with me?" />
+    <meta
+      name="description"
+      content="A cute website to ask for your lover for a date 🥰!!"
+    />
+    <meta name="keywords" content="dating,lover,love" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="elifgazioglu, yavuzkoca, samocodes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Wanna go out with me?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      function randomPositioning() {
+        const noButtonElement = document.getElementById("cant");
+        const { width, height } = noButtonElement.getBoundingClientRect();
+
+        const x = Math.random() * (window.innerWidth - width);
+        const y = Math.random() * (window.innerHeight - height);
+
+        noButtonElement.style.left = `${x}px`;
+        noButtonElement.style.top = `${y}px`;
+      }
+
+      window.addEventListener("load", () => {
+        const noButtonElement = document.getElementById("cant");
+        const { x, y, width, height } = noButtonElement.getBoundingClientRect();
+
+        noButtonElement.style.position = "absolute";
+        noButtonElement.style.top = `${y}px`;
+        noButtonElement.style.left = `${x}px`;
+        noButtonElement.style.transition = `left 0.3s, top 0.3s`;
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Do you wanna go out with me?</h1>
+
+      <img
+        src="https://i.giphy.com/cLS1cfxvGOPVpf9g3y.webp"
+        alt="Cute animated illustration"
+        draggable="false"
+      />
+
+      <noscript>
+        <meta http-equiv="refresh" content="0;url=nojs.html" />
+      </noscript>
+
+      <div class="answer">
+        <a href="yes.html">Yes <3</a>
+        <button
+          id="cant"
+          onmouseover="randomPositioning()"
+          onclick="randomPositioning()"
+        >
+          No :(
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
