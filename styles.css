@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #F8C8DC;
+    background-color: #53cdbd;
 }
 
 #noButton {
@@ -32,7 +32,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 56px;
     margin-left: 20px;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 .gif_container {
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 90px;
 }
