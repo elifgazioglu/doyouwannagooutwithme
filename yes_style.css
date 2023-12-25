@@ -3,14 +3,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F8C8DC;
+    background-color: #1E2A36; /* Changed to a dark navy blue */
 }
 
 .header_text {
     font-family: 'Nunito';
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: #D1E8E2; /* Changed to a light grey-blue for contrast */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;

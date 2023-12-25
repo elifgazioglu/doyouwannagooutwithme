@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #F8C8DC;
+    background-color: #1E2A36; /* Dark navy blue for a neutral, strong background */
 }
 
 #noButton {
@@ -21,7 +21,7 @@ body {
     font-family: 'Nunito';
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: #D1E8E2; /* Light grey-blue for contrast and readability */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -37,7 +37,7 @@ body {
 }
 
 .btn {
-    background-color: #FFB6C1;
+    background-color: #345B63; /* Muted teal for a more subdued but still distinct button */
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -48,6 +48,11 @@ body {
     border: none;
     border-radius: 12px;
     transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D4ECDD; /* A lighter shade for the hover effect */
+    color: #1E2A36; /* Dark text color on hover */
 }
 
 .gif_container {
