@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #F8C8DC;
+    background-color: #74CCF7;
 }
 
 #noButton {
@@ -21,7 +21,7 @@ body {
     font-family: 'Nunito';
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -37,7 +37,7 @@ body {
 }
 
 .btn {
-    background-color: #FFB6C1;
+    background-color: #E8E8E8;
     color: white;
     padding: 15px 32px;
     text-align: center;
